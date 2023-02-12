@@ -37,7 +37,7 @@ body{
 }
 .container {
     width: 100%;
-    max-width: 2500px;
+    max-width: 1260px;
     margin: 0 auto;
 }
 .content-header {
@@ -152,7 +152,6 @@ button{
     display: flex;
     align-content: center;
     justify-content: flex-start;
-    margin-left: 400px;
     flex-wrap: wrap;
 
 }
@@ -166,7 +165,6 @@ button{
 .projects-container{
     display: flex;
     margin: 107px 134.55px 0 134.45px;
-    max-width: 2500px;
     height: 552.28px;
 }
 .right-projects{
@@ -824,6 +822,9 @@ label span {
     line-height: 29px;
     text-align: center;
     color: #363636;
+}
+.clients-wrapper{
+    max-width: 2500px;
 }
 .clients-review{
     display: flex;
@@ -1509,6 +1510,7 @@ label span {
 @media all and (max-width:768px){
     body{
         max-width: 768px;
+        overflow-x: hidden;
     }
     .header{
         width: 100%;
@@ -1531,6 +1533,7 @@ label span {
         max-width:768px;
     }
     .Rostov-wrapper{
+        place-self: center;
         width: 100%;
         max-width: 768px;
         margin-left: 0;
