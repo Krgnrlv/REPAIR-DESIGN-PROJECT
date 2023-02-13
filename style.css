@@ -920,6 +920,7 @@ label span {
     height: 953.898px;
     max-width: 2500px;
     background-image: url(images/questions-backgraund.png);
+    backround-size: cover; 
 }
 .questions-overlay{
     height: 953.898px;
