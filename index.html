@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IC "Repair Design Project</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style — копия.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Yeseva+One&display=swap" rel="stylesheet">
 </head>
@@ -46,8 +46,8 @@
         </section>
         <section class="projects" id="projects">
             <div class="projects-container container">
-                <div class="right-projects">
-                    <div class="right-text">
+                <div class="left-projects">
+                    <div class="left-text">
                         <h2 class="subtitle">Completed projects</h2>
                         <div class="text-and-info"><p class="text-projects">Only a small part of the work performed by our company is presented
                                 on the site. For 14 years on in the construction<br>market we have made happy more than 1000 families</p>
@@ -70,22 +70,32 @@
                         </div>    
                     </div> 
                     <div class="arrows-dots">
-                        <a href=""><img src="images/arrow.svg" class="arrow"></a>
-                        <a href=""><div class="dot" style="background-color: white;"></div></a>
-                        <a href=""><div class="dot"></div></a>
-                        <a href=""><div class="dot"></div></a>
-                        <a href=""><img src="images/arrow.svg" class="arrow arrow-right"></a>
+                        <span id="btn-prev"><img src="images/arrow.svg" class="arrow" ></span>
+                        <div class="dot active"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <span  id="btn-next"><img src="images/arrow.svg" class="arrow arrow-right"></span>
                     </div>
                 </div>
-                <div class="left-projects">
+                <div class="right-projects">
                     <nav class="projects-navigation">
                         <ul class="link-projects">
-                            <li><a href="" class="link-projects-item l-p-i-first">Rostov-on-Don, Admiral</a></li>
-                            <li><a href="" class="link-projects-item">Sochi Thieves</a></li>
-                            <li><a href="" class="link-projects-item">Rostov-on-Don Patriotic</a></li>
+                            <li><div class="link-projects-item active">Rostov-on-Don, Admiral</div></li>
+                            <li><div class="link-projects-item">Sochi Thieves</div></li>
+                            <li><div class="link-projects-item">Rostov-on-Don Patriotic</div></li>
                         </ul>
                     </nav>
-                    <img src="images/image 2.1.png" class="img-projects">
+                    <div class="slider-wrapper">
+                        <div class="slide active">
+                            <img src="images/image 2.1.png" class="img-projects">
+                        </div>
+                        <div class="slide ">
+                            <img src="images/image 2.png" class="img-projects">
+                        </div>
+                        <div  class="slide ">
+                            <img src="images/slider-3.jpg"  class="img-projects">
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -438,5 +448,6 @@
             </div>
         </div>
     </footer>
+    <script src="main.js"></script>
 </body>
 </html>
