@@ -938,6 +938,7 @@ label span {
     height: 953.898px;
     max-width: 2500px;
     background-image: url(images/questions-backgraund.png);
+    background-size: cover;
 }
 .questions-overlay{
     height: 953.898px;
@@ -1158,7 +1159,7 @@ label span {
         max-width: 1300px;
         justify-content: center;
     }
-    .right-projects{
+    .left-projects{
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -1192,7 +1193,7 @@ label span {
         height: 86px;
         width: 311px;
     }
-    .right-text{
+    .left-text{
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -1213,12 +1214,30 @@ label span {
         height: 241.3549346923828px;
         width: 340px;
         padding: 0 13px 0 14px ;
-        background-image: url(images/image\ 2.png);
-        background-size: cover;
         display: flex;
         flex-wrap: wrap;
         align-content: center;
         justify-content: space-between;
+        position: relative;
+    }
+    .img-projects-mobile{
+        height: 241.3549346923828px;
+        width: 340px;
+    }
+    .slide-mobile-project{
+        display: none;
+    }
+    .slide-mobile-project.active{
+        display: block;
+    }
+    #btn-prev-mobile-project, #btn-next-mobile-project{
+        position: absolute;
+        left: 20px;
+        top: 40%;    
+    }
+    #btn-next-mobile-project{
+        left: auto;
+        right: 20px;
     }
     .info-progects-wrapper{
         margin: 0;
@@ -1242,7 +1261,7 @@ label span {
     .arrows-dots{
         display: none;
     }
-    .left-projects{
+    .right-projects{
         display: none;
     }
     .subtitle-sections{
@@ -1418,8 +1437,6 @@ label span {
         display: none;
     }
     .photo-fantasies-mobile{
-        background-image: url(images/background-fantasies.png);
-        background-size: cover;
         height: 242px;
         width: 340px;
         padding: 0 13px 0 14px;
@@ -1427,6 +1444,26 @@ label span {
         flex-wrap: wrap;
         justify-content: space-between;
         align-content: center;
+        position: relative;
+    }
+    .img-fantasies-mobile{
+        height: 242px;
+        width: 340px;
+    }
+    .slide-mobile-fantasies{
+        display: none;
+    }
+    .slide-mobile-fantasies.active{
+        display: block;
+    }
+    #btn-prev-mobile-fantasies, #btn-next-mobile-fantasies{
+        position: absolute;
+        left: 20px;
+        top: 40%;    
+    }
+    #btn-next-mobile-fantasies{
+        left: auto;
+        right: 20px;
     }
     .clients{
         display: none;
